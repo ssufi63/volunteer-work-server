@@ -17,7 +17,7 @@ var serviceAccount = require("./configs/volunteer-work-e9ac1-firebase-adminsdk-9
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: process.env.FIRE_DB
+  databaseURL: "https://volunteer-work-e9ac1.firebaseio.com"
 });
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
